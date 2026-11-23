@@ -35,13 +35,17 @@
 </head>
 <body>
     <main style="text-align: center;">
-        <img src="./img/logo.png" alt="TCU-ACC_2023-logo" width="400px" height="auto" style="padding: 0; margin: 0;" />
+        <!-- 表示幅 400px に合わせた 1x/2x の WebP を配信し、非対応ブラウザには縮小済み PNG を返す -->
+        <picture>
+            <source type="image/webp" srcset="./img/logo-1x.webp 1x, ./img/logo-2x.webp 2x" />
+            <img src="./img/logo.png" alt="TCU-ACC_2023-logo" width="400px" height="auto" style="padding: 0; margin: 0;" />
+        </picture>
         <p class="fade-in"><a href="http://tcu-acc.great-site.net/">公式Webサイトはこちら &gt;</a></p>
     </main>
     <footer class="fade-in">
         <div style="text-align: center; padding: 0 20px; font-size: small;">
             <p style="text-align: left;">
-                <a href="https://tcu-dc.net/">&nbsp;<img src="./img/tcu-dc_logo.png" alt="TCU-DC-logo" width="200px" height="auto" /></a>
+                <a href="https://tcu-dc.net/">&nbsp;<picture><source type="image/webp" srcset="./img/tcu-dc_logo-1x.webp 1x, ./img/tcu-dc_logo-2x.webp 2x" /><img src="./img/tcu-dc_logo.png" alt="TCU-DC-logo" width="200px" height="auto" /></picture></a>
                 <br>&nbsp;管理者:&nbsp;<a href="https://bento.me/ym/">山下マナト <small>(同好会連合本部2023 部長)</small></a>
                 <br>© 2023 Tokyo City University Association of Clubs/Circles<br>
             </p>
